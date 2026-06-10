@@ -22,7 +22,8 @@ const Sidebar = () => {
     setStatus(null);
 
     try {
-      const response = await axios.post('http://localhost:8000/api/ingest', formData, {
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+      const response = await axios.post(`${apiUrl}/api/ingest`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
