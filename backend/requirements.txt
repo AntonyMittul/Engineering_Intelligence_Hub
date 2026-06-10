@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+langchain
+langchain-community
+langchain-qdrant
+qdrant-client
+sentence-transformers
+python-multipart
+pypdf
+pytesseract
+Pillow
+ollama
